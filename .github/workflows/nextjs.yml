@@ -27,7 +27,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            sudo su 
+            sudo su
             cd /var/www/githuboauth
             git checkout main
             git stash
