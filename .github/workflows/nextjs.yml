@@ -30,4 +30,4 @@ jobs:
             cd /var/www/githuboauth
             git pull origin main
             npm install --legacy-peer-deps
-            npm start
+            next start -p 3040
