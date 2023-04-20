@@ -18,7 +18,7 @@ jobs:
       - name: Adding Known Hosts update
         run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
 
-      - name: Restart Server update
+      - name: Restart Server
 
         uses: appleboy/ssh-action@master
         with:
