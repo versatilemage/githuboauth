@@ -29,8 +29,6 @@ jobs:
           script: |
             sudo su
             cd /var/www/githuboauth
-            git checkout main
-            git stash
             git pull origin main
             npm install --legacy-peer-deps
-            npm start
+            npm run dev
