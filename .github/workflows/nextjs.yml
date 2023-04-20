@@ -27,7 +27,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            sudo su
             cd /var/www/githuboauth
             git pull origin main
             npm install --legacy-peer-deps
