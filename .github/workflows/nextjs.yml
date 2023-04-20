@@ -32,5 +32,5 @@ jobs:
             git checkout main
             git stash
             git pull origin main
-            npm install
-            npm strat
+            npm install --legacy-peer-deps
+            npm start
