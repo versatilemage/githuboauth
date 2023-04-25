@@ -27,8 +27,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /var/www/githuboauth
+            cd /var/www/
+            git clone git@github.com:gyanminda/Digigrid.git
             git pull origin main
-            npm install --legacy-peer-deps
-            pm2 stop 0
-            pm2 start deploy.json
+           
